@@ -1,0 +1,27 @@
+class z1 
+{
+	static int i=10;
+	static
+	{
+		System.out.println("z1.SIB" +i);
+		i=20;
+	}
+}
+	class z2
+	{
+		static
+		{
+System.out.println("z2.SIB");
+		}
+
+	public static void main(String[] args) 
+	{
+		System.out.println("MAIN BEGIN");
+		System.out.println(z1.i);
+		System.out.println("............");
+		System.out.println(z1.i);
+			System.out.println("main end");
+
+
+	}
+}
